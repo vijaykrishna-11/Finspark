@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FinSpark - Bridging the Digital Gap. Digital literacy helper apps for everyone."
+    />
+    <meta name="theme-color" content="#6b2fa6" />
+    <title data-i18n="site.title">FinSpark</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Google Fonts for Indian languages support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Kannada:wght@400;600;700&family=Noto+Sans+Malayalam:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css?v=20260727-3" />
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link" data-i18n="ui.skipToContent"
+      >Skip to content</a
+    >
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header-container">
+        <div class="brand">
+          <h1 class="brand-title" data-i18n="site.title">FinSpark</h1>
+          <p class="brand-tagline" data-i18n="site.tagline">
+            Bridging the Digital Gap
+          </p>
+        </div>
+
+        <div class="language-switcher">
+          <span
+            id="language-label"
+            class="sr-only"
+            data-i18n="ui.switchLanguage"
+            >Select Language</span
+          >
+          <button
+            type="button"
+            id="language-toggle"
+            class="language-toggle"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="language-menu"
+            aria-labelledby="language-label language-current"
+          >
+            <i data-lucide="globe" class="globe-icon" aria-hidden="true"></i>
+            <span id="language-current" class="language-toggle-label"
+              >English</span
+            >
+            <i
+              data-lucide="chevron-down"
+              class="chevron-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <div
+            id="language-menu"
+            class="language-menu"
+            role="listbox"
+            aria-labelledby="language-label"
+            hidden
+          >
+            <button
+              type="button"
+              class="language-option"
+              role="option"
+              data-language-option
+              data-language="en"
+              lang="en"
+              aria-selected="true"
+            >
+              English
+            </button>
+            <button
+              type="button"
+              class="language-option"
+              role="option"
+              data-language-option
+              data-language="ta"
+              lang="ta"
+              aria-selected="false"
+            >
+              தமிழ்
+            </button>
+            <button
+              type="button"
+              class="language-option"
+              role="option"
+              data-language-option
+              data-language="kn"
+              lang="kn"
+              aria-selected="false"
+            >
+              ಕನ್ನಡ
+            </button>
+            <button
+              type="button"
+              class="language-option"
+              role="option"
+              data-language-option
+              data-language="te"
+              lang="te"
+              aria-selected="false"
+            >
+              తెలుగు
+            </button>
+            <button
+              type="button"
+              class="language-option"
+              role="option"
+              data-language-option
+              data-language="ml"
+              lang="ml"
+              aria-selected="false"
+            >
+              മലയാളം
+            </button>
+            <button
+              type="button"
+              class="language-option"
+              role="option"
+              data-language-option
+              data-language="hi"
+              lang="hi"
+              aria-selected="false"
+            >
+              हिन्दी
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h2 id="hero-title" class="hero-title" data-i18n="site.heroTitle">
+          Learn Digital Apps with Confidence
+        </h2>
+        <p class="hero-subtitle" data-i18n="site.heroSubtitle">
+          Simple step-by-step guides for everyday apps, designed for everyone
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+      <!-- App categories will be dynamically rendered here -->
+      <div
+        id="app-container"
+        class="app-container"
+        role="region"
+        aria-label="App Categories"
+      >
+        <!-- Loading state -->
+        <div class="loading" aria-live="polite">
+          <div class="loading-spinner"></div>
+          <p data-i18n="ui.loading">Loading...</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <p class="footer-text">
+          <span data-i18n="site.footer">Team FinSpark</span>
+          <span aria-hidden="true">•</span>
+          <span data-i18n="site.footerYear">2026</span>
+        </p>
+        <p class="footer-mission" data-i18n="site.footerMission">
+          Empowering digital literacy for all
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/apps.js?v=20260727-4"></script>
+    <script src="js/i18n.js?v=20260727-3"></script>
+    <script src="js/render.js?v=20260727-3"></script>
+    <script src="js/main.js?v=20260727-3"></script>
+  </body>
+</html>

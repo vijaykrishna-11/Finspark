@@ -1,0 +1,98 @@
+{
+    "site": {
+        "title": "FinSpark",
+        "tagline": "Bridging the Digital Gap",
+        "heroTitle": "Learn Digital Apps with Confidence",
+        "heroSubtitle": "Simple step-by-step guides for everyday apps, designed for everyone",
+        "footer": "Team FinSpark",
+        "footerYear": "2026",
+        "footerMission": "Empowering digital literacy for all"
+    },
+    "ui": {
+        "switchLanguage": "Select Language",
+        "skipToContent": "Skip to content",
+        "loading": "Loading...",
+        "howToUse": "How to Use",
+        "whatIsItFor": "What is it for?",
+        "download": "Download / Learn More",
+        "steps": "Steps"
+    },
+    "categories": {
+        "health": "Health & Safety",
+        "transport": "Transport & Payments",
+        "education": "Education",
+        "government": "Government Apps"
+    },
+    "apps": {
+        "agust-ai": {
+            "name": "Agust AI",
+            "use": "An AI medical assistant on WhatsApp that answers your health questions in simple language. Supports multiple Indian languages. Great for basic health guidance.",
+            "howToUse": [
+                "Open WhatsApp on your phone",
+                "Start a chat with Agust AI number",
+                "Type or speak your health question",
+                "Get simple, easy-to-understand advice"
+            ]
+        },
+        "medisafe": {
+            "name": "Medisafe",
+            "use": "A smart reminder app that helps you take medicines on time. Tracks your pills, appointments, and warns about harmful drug combinations. Family members can help monitor.",
+            "howToUse": [
+                "Download Medisafe from Play Store",
+                "Add your medicines and timings",
+                "Get reminders when it's time to take medicine",
+                "Share with family using Medfriend feature"
+            ]
+        },
+        "life360": {
+            "name": "Life360",
+            "use": "Keeps your family safe by showing where everyone is in real-time. Get alerts when family members arrive or leave places. One tap to alert family in emergencies.",
+            "howToUse": [
+                "Download Life360 and create account",
+                "Invite family members to join your circle",
+                "See everyone's location on the map",
+                "Get automatic arrival and departure alerts"
+            ]
+        },
+        "where-is-my-train": {
+            "name": "Where is My Train",
+            "use": "Track any Indian train in real-time. Know exactly when your train will arrive or depart. Works even with low or no internet connection. Perfect for daily commuters.",
+            "howToUse": [
+                "Search for your train by name or number",
+                "See live location on map",
+                "Check arrival time at your station",
+                "Set alerts for train updates"
+            ]
+        },
+        "bhim-app": {
+            "name": "BHIM App",
+            "use": "India's official UPI payment app. Send money directly from your bank account. Works even offline using *99# code. Simple, secure, and perfect for beginners.",
+            "howToUse": [
+                "Download BHIM and link your phone number",
+                "Verify your bank account",
+                "Send money using UPI ID or phone number",
+                "Confirm payment with your PIN"
+            ]
+        },
+        "matiks": {
+            "name": "Matiks",
+            "use": "A fun app to learn and practice math. Offers quizzes at different levels from basic to advanced. Makes math easy to understand with step-by-step explanations.",
+            "howToUse": [
+                "Download Matiks from Play Store",
+                "Choose your skill level",
+                "Practice with interactive quizzes",
+                "Track your progress and earn rewards"
+            ]
+        },
+        "umang": {
+            "name": "UMANG",
+            "use": "A government services app that helps you use many official services in one place. You can check documents, pay bills, book gas, and access services like Aadhaar, PAN, and PF.",
+            "howToUse": [
+                "Download UMANG and open the app",
+                "Sign in with your mobile number",
+                "Search for the government service you need",
+                "Follow the on-screen steps and submit your request"
+            ]
+        }
+    }
+}
