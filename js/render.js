@@ -125,6 +125,32 @@ const Render = (function() {
             return createStepElement(index, stepText, iconName);
         }).join('');
 
+        const voiceHtml = `
+            <div class="voice-controls" role="group" aria-label="${I18n.t('ui.voiceControls')}">
+                <button
+                    type="button"
+                    class="voice-btn voice-btn--listen"
+                    data-voice-action="listen"
+                    data-app-id="${escapeHtml(app.id)}"
+                    aria-label="${I18n.t('ui.listen')} ${escapeHtml(name)}"
+                >
+                    ${createIcon('volume-2')}
+                    <span>${I18n.t('ui.listen')}</span>
+                </button>
+                <button
+                    type="button"
+                    class="voice-btn voice-btn--stop"
+                    data-voice-action="stop"
+                    data-app-id="${escapeHtml(app.id)}"
+                    aria-label="${I18n.t('ui.stop')} ${escapeHtml(name)}"
+                >
+                    ${createIcon('square')}
+                    <span>${I18n.t('ui.stop')}</span>
+                </button>
+                <p class="voice-status" data-voice-status-for="${escapeHtml(app.id)}" aria-live="polite"></p>
+            </div>
+        `;
+
         // Generate download button if link exists
         const downloadHtml = app.link ? `
             <a href="${escapeHtml(app.link)}" 
@@ -160,6 +186,8 @@ const Render = (function() {
                         ${stepsHtml}
                     </div>
                 </div>
+
+                ${voiceHtml}
                 
                 ${downloadHtml}
             </article>
