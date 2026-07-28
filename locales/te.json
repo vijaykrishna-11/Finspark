@@ -15,7 +15,16 @@
         "howToUse": "ఎలా ఉపయోగించాలి",
         "whatIsItFor": "ఇది దేనికి?",
         "download": "డౌన్‌లోడ్ / మరింత తెలుసుకోండి",
-        "steps": "దశలు"
+        "steps": "దశలు",
+        "voiceControls": "వాయిస్ నియంత్రణలు",
+        "listen": "వినండి",
+        "stop": "ఆపు",
+        "voiceSpeaking": "వాయిస్ ప్లే అవుతోంది...",
+        "voiceDone": "పూర్తైంది.",
+        "voiceStopped": "ఆపబడింది.",
+        "voiceError": "వాయిస్ ప్లే చేయలేకపోయాం.",
+        "voiceNotSupported": "ఈ బ్రౌజర్‌లో వాయిస్ సపోర్ట్ లేదు.",
+        "voiceLanguageUnavailable": "ఈ భాషకు వాయిస్ అందుబాటులో లేదు. ఇంగ్లీష్‌లో చదువుతోంది..."
     },
     "categories": {
         "health": "ఆరోగ్యం & భద్రత",

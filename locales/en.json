@@ -15,7 +15,16 @@
         "howToUse": "How to Use",
         "whatIsItFor": "What is it for?",
         "download": "Download / Learn More",
-        "steps": "Steps"
+        "steps": "Steps",
+        "voiceControls": "Voice controls",
+        "listen": "Listen",
+        "stop": "Stop",
+        "voiceSpeaking": "Speaking...",
+        "voiceDone": "Done.",
+        "voiceStopped": "Stopped.",
+        "voiceError": "Could not play voice.",
+        "voiceNotSupported": "Voice is not available on this browser.",
+        "voiceLanguageUnavailable": "Voice for this language not installed. Using English..."
     },
     "categories": {
         "health": "Health & Safety",

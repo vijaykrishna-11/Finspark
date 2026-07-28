@@ -73,7 +73,8 @@ const I18n = (function() {
      * @returns {Promise<Object>} Translations object
      */
     async function fetchLocale(lang) {
-        const url = `${LOCALES_PATH}/${lang}.json`;
+        const cacheBuster = '20260728-3';
+        const url = `${LOCALES_PATH}/${lang}.json?v=${cacheBuster}`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
@@ -209,6 +210,25 @@ const I18n = (function() {
             
             // Fallback to English
             return getNestedValue(fallbackTranslations, `apps.${appId}`);
+        },
+
+        /**
+         * Get English app translation (for voice fallback)
+         * @param {string} appId - App ID
+         * @returns {Object|undefined} English app translations
+         */
+        getEnglishAppTranslation(appId) {
+            return getNestedValue(fallbackTranslations, `apps.${appId}`);
+        },
+
+        /**
+         * Get English UI string (for voice fallback)
+         * @param {string} key - Translation key
+         * @returns {string} English text
+         */
+        getEnglishText(key) {
+            const value = getNestedValue(fallbackTranslations, key);
+            return value !== undefined ? value : key;
         },
 
         /**

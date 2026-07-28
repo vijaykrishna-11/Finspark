@@ -15,7 +15,16 @@
         "howToUse": "कैसे उपयोग करें",
         "whatIsItFor": "यह किसके लिए है?",
         "download": "डाउनलोड / अधिक जानें",
-        "steps": "चरण"
+        "steps": "चरण",
+        "voiceControls": "आवाज़ नियंत्रण",
+        "listen": "सुनें",
+        "stop": "रोकें",
+        "voiceSpeaking": "आवाज़ चल रही है...",
+        "voiceDone": "पूरा हुआ।",
+        "voiceStopped": "रोक दिया गया।",
+        "voiceError": "आवाज़ नहीं चल सकी।",
+        "voiceNotSupported": "इस ब्राउज़र में आवाज़ सुविधा उपलब्ध नहीं है।",
+        "voiceLanguageUnavailable": "इस भाषा की आवाज़ उपलब्ध नहीं है। अंग्रेज़ी में पढ़ रहा है..."
     },
     "categories": {
         "health": "स्वास्थ्य और सुरक्षा",
